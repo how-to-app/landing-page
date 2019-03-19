@@ -441,39 +441,90 @@ footer .copyright {
 .large {
   transform: scale(1.3);
 }
-.team-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  line-height: 1.5;
-  color: #323232;
-  font-size: 15px;
-  font-weight: 400;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
+.team-page {
+  background: #394147;
 }
-.heading-title {
-  margin-bottom: 100px;
+@media mobile {
+  .team-page {
+    background: white;
+  }
 }
-.text-center {
-  text-align: center;
+.developer-banner {
+  background-color: #D1BD88;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto 25px auto;
+  width: 70%;
 }
-.heading-title h3 {
-  margin-bottom: 0;
-  letter-spacing: 2px;
-  font-weight: normal;
+@media (max-width: 515px) {
+  .developer-banner {
+    border-radius: 0;
+    margin: 0 auto 0 auto;
+    width: 100%;
+  }
 }
-.p-top-30 {
-  padding-top: 30px;
+.developer-banner .banner-text {
+  color: #D34F06;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 15px;
+  width: auto;
 }
-.half-txt {
-  width: 60%;
-  margin: 0 auto;
-  display: inline-block;
-  line-height: 25px;
-  color: #7e7e7e;
+@media (max-width: 515px) {
+  .developer-banner .banner-text h2 {
+    text-align: center;
+  }
 }
-.img {
-  border: 1px solid red;
-  margin: 10%;
-  padding: auto;
+.developer-banner .banner-text .expand-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+@media (max-width: 515px) {
+  .developer-banner .banner-text .expand-content .developer-description h3 {
+    text-align: center;
+  }
+}
+.developer-banner .banner-text .expand-content ul {
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+}
+@media (max-width: 800px) {
+  .developer-banner .banner-text .expand-content ul {
+    width: 100%;
+  }
+}
+.developer-banner .banner-text .expand-content ul a i {
+  color: #D34F06;
+  height: auto;
+  width: 100%;
+}
+.developer-banner .banner-text .expand-content ul a i:hover {
+  color: #5B4ED3;
+}
+.developer-banner img {
+  border-radius: 0 15px 15px 0;
+  height: auto;
+  max-height: 300px;
+  width: auto;
+}
+@media (max-width: 515px) {
+  .developer-banner img {
+    display: none;
+  }
+}
+.reverse img {
+  border-radius: 15px 0 0 15px;
+  order: -1;
+}
+.joe-pic {
+  margin: 20% 0;
+}
+.joe-content {
+  display: flex;
+  flex-direction: column;
 }
