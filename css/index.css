@@ -522,9 +522,13 @@ footer .copyright {
   order: -1;
 }
 .joe-pic {
-  margin: 20% 0;
+  margin-top: 20%;
 }
 .joe-content {
   display: flex;
   flex-direction: column;
+}
+.meet-us {
+  display: flex;
+  margin-top: 1.5%;
 }
