@@ -1,10 +1,11 @@
 .carousel {
   margin: 25px auto 0 auto;
   max-width:80%;
-  
+
   @media @mobile {
     display: none;
   }
+
   
   .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     width: 100%;
@@ -23,7 +24,8 @@
       width: 40%;
   
       &:hover {
-        text-decoration: none;
+         text-decoration: none;
+        
       } 
     } 
   }
@@ -41,6 +43,8 @@
   @media @mobile {
     flex-direction: column;
     max-height: 100%;
+    background:@gullyGold;
+
   }
   
   .bottom-banner-left {
@@ -86,3 +90,9 @@
     }
   }
 }
+/* toggle used for js on home-page header-right class */
+.large {
+  transform: scale(1.3);
+}
+
+// 
