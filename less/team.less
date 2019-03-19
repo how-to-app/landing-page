@@ -1,0 +1,110 @@
+.team-page{
+    background:@sanJuan;
+    @media mobile{
+        background: white;
+    }
+}
+.developer-banner {
+    background-color: @gullyGold;
+    border-radius: 15px;
+   display:flex;
+   flex-direction: row;
+    margin: 0 auto 25px auto;
+    width: 70%;
+    
+    @media @mobile {
+      border-radius: 0;
+      margin: 0 auto 0 auto;
+      width: 100%;
+      
+    }
+  
+    .banner-text {
+      color: @brightGray ;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      padding: 15px;
+      width: auto;
+  
+      h2 {
+        @media @mobile {
+          text-align: center;
+        }
+      }
+      
+      .expand-content {
+        display: flex;
+        flex-direction: column;
+        height: 100%; 
+        justify-content: space-between;
+  
+        .developer-description {
+          h3 {
+            @media @mobile {
+              text-align: center;
+            }
+          }
+        }
+  
+        ul {
+          display: flex;
+          justify-content: space-around;
+          width: 15%;
+          
+          @media @tablet {
+            width: 100%;
+          }
+          
+          a {
+      
+            i {
+              color: @brightGray;
+              height: auto;
+              width: 100%;
+  
+              &:hover {
+                color: @altColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    img {
+      border-radius: 0 15px 15px 0;
+      height: auto;
+      max-height: 300px;
+      width: auto;
+      
+      @media @mobile {
+        display: none;
+      }
+    }
+  }
+  
+  .reverse {
+    img {
+      border-radius: 15px 0 0 15px;
+      order: -1;
+    }
+  }
+  
+  
+// jo pic changes
+.joe-pic{
+    margin-top: 20%;
+}
+
+.joe-content{
+    display:flex;
+    flex-direction: column
+}
+
+// h2 in nav
+
+.meet-us{
+display:flex;
+margin-top: 1.5%;
+}
