@@ -1,0 +1,49 @@
+.nav-bar {
+  background-color: @sanJuan;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  
+  @media @mobile {
+    align-items: center;
+    border-bottom: 2px white solid;
+    flex-direction: column;
+  }
+
+  h1 {
+    padding: 15px;
+  }
+
+  nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+
+    @media @tablet {
+      width: 50%;
+    }
+    
+    @media @mobile {
+      flex-direction: column;
+    }
+
+    a {
+      .custom-button(@altColor, white);
+      margin: 0 5px 0 5px;
+      
+      &:hover {
+        border: white;
+      }
+   
+      @media @mobile {
+        text-align: center;
+        width: 100vw;
+        border-radius: 0;
+        border-top: 2px white solid;
+      }
+    } 
+  }
+}
