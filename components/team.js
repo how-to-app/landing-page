@@ -14,7 +14,8 @@ class DeveloperBanner {
           this.expandButton.addEventListener('click', this.callExpandBanner);
         }
       
-      })
+      });
+      
       window.addEventListener("resize", () => {
         if(window.innerWidth <= 720) {
           this.hideAll();
@@ -24,7 +25,7 @@ class DeveloperBanner {
           this.showAll();
           this.expandButton.removeEventListener("click", this.callExpandBanner);
         }
-      })
+      });
     }
   
     expandBanner() {

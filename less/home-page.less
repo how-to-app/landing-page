@@ -6,7 +6,8 @@
     display: none;
   }
 
-  
+
+
   .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     width: 100%;
     height: auto;
@@ -22,6 +23,7 @@
     a{
       margin: 15px 0;
       width: 40%;
+      
   
       &:hover {
          text-decoration: none;
@@ -77,12 +79,9 @@
       background-color: #004A7F;
       -webkit-border-radius: 10px;
       border-radius: 10px;
-      border: none;
-      color: #FFFFFF;
       cursor: pointer;
-      display: inline-block;
       font-family: Arial;
-      font-size: 20px;
+      font-size: 70px;
       padding: 5px 10px;
       text-align: center;
       text-decoration: none;
@@ -126,6 +125,12 @@
       100% { background-color: @sanJuan; box-shadow: 0 0 3px @sanJuan; 
       }
       
+    }
+  }
+// once we get to mobile the 
+  @media @mobile{
+    .button{
+      margin-top:10%;
     }
   }
 

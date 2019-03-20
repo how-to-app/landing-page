@@ -99,16 +99,45 @@
 
 .joe-content{
     display:flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
 // h2 in nav
-
 .meet-us{
 display:flex;
 margin-top: 1.5%;
+margin-left: 15%;
+
+@media @tablet{
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  margin-left: 10%;
+
+  @media @mobile{
+    margin-left:50%;
+    padding-bottom: 2%;
+  }
+
+ }
 }
 
-.temporary-hide {
-    display: none !important;
+//for joe profile at mobile
+@media @mobile{
+  .mover{
+    margin-top:20%;
   }
+}
+//moved git logo for joe at mobile on team page
+@media @mobile{
+  .git{
+    margin-left:46%;
+  }
+}
+//moved shelia profile at mobile on team page
+@media @mobile{
+  .shelia-mov{ 
+    margin-top:10%;
+  }
+}
+
