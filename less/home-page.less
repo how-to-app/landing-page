@@ -6,7 +6,8 @@
     display: none;
   }
 
-  
+
+
   .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     width: 100%;
     height: auto;
@@ -22,6 +23,7 @@
     a{
       margin: 15px 0;
       width: 40%;
+      
   
       &:hover {
          text-decoration: none;
@@ -73,7 +75,62 @@
     }
 
     .button {
-      margin-bottom: 15px;
+      // margin-bottom: 15px;
+      background-color: #004A7F;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: Arial;
+      font-size: 70px;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      -webkit-animation: glowing 1500ms infinite;
+      -moz-animation: glowing 1500ms infinite;
+      -o-animation: glowing 1500ms infinite;
+      animation: glowing 1500ms infinite;
+      }
+    @-webkit-keyframes glowing {
+      0% { background-color: @sanJuan; -webkit-box-shadow: 0 0 3px @sanJuan;
+       }
+      50% { background-color: @straw; -webkit-box-shadow: 0 0 40px @straw;
+       }
+      100% { background-color: @sanJuan; -webkit-box-shadow: 0 0 3px @sanJuan; 
+      }
+    }
+    
+    @-moz-keyframes glowing {
+      0% { background-color: @sanJuan; -moz-box-shadow: 0 0 3px @sanJuan; 
+        }
+      50% { background-color: @straw; -moz-box-shadow: 0 0 40px @straw; 
+        }
+      100% { background-color: @sanJuan; -moz-box-shadow: 0 0 3px @sanJuan; 
+        }
+      }
+    
+    @-o-keyframes glowing {
+      0% { background-color: @sanJuan; box-shadow: 0 0 3px @sanJuan; 
+        }
+      50% { background-color: @straw; box-shadow: 0 0 40px @straw; 
+        }
+      100% { background-color: @sanJuan; box-shadow: 0 0 3px @sanJuan; 
+        }
+      }
+    
+    @keyframes glowing {
+      0% { background-color: @sanJuan; box-shadow: 0 0 3px @sanJuan; 
+      }
+      50% { background-color: @straw; box-shadow: 0 0 40px @straw; 
+      }
+      100% { background-color: @sanJuan; box-shadow: 0 0 3px @sanJuan; 
+      }
+      
+    }
+  }
+// once we get to mobile the 
+  @media @mobile{
+    .button{
+      margin-top:10%;
     }
   }
 
